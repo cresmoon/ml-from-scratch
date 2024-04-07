@@ -1,2 +1,7 @@
-# ml-from-scratch
-ML algorithm implementations from scratch
+# ML from scratch
+
+Implementations of some ML algorithms from scratch.
+
+## Unsupervised learning
+
+[x] K-means
