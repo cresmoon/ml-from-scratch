@@ -10,23 +10,23 @@
 Example:
 
 ```python
-    train_x = np.array([
-        [0., 0., 0.], [0., .5, 0.], [1., 1., .5], [1., 1., .6]
-    ])
-    train_y = np.array([0, 0, 0, 1])
-    k = 3
-    knn = KNN(k)
-    knn.fit(train_x, train_y)
-    test_x = np.array([
-        [0., 0., 0.1],
-        [1., 1., 1.]
-    ])
-    pred_y = knn.predict(test_x)
-    print(f"k = {k}")
-    print("Train data:")
-    for i, x in enumerate(train_x):
-        print(f"\t{x} - label: {train_y[i]}")
-    print("Prediction:")
-    for i, x in enumerate(test_x):
-        print(f"\t{x} - label: {pred_y[i]}")
+train_x = np.array([
+    [0., 0., 0.], [0., .5, 0.], [1., 1., .5], [1., 1., .6]
+])
+train_y = np.array([0, 0, 0, 1])
+k = 3
+knn = KNN(k)
+knn.fit(train_x, train_y)
+test_x = np.array([
+    [0., 0., 0.1],
+    [1., 1., 1.]
+])
+pred_y = knn.predict(test_x)
+print(f"k = {k}")
+print("Train data:")
+for i, x in enumerate(train_x):
+    print(f"\t{x} - label: {train_y[i]}")
+print("Prediction:")
+for i, x in enumerate(test_x):
+    print(f"\t{x} - label: {pred_y[i]}")
 ```
